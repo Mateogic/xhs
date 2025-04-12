@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 指定父项目 -->
+    <parent>
+        <groupId>com.mateogic</groupId>
+        <artifactId>xhs</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <!-- 多模块项目需要配置打包方式为 pom -->
+    <!-- 以便后续添加多个子模块（封装各种业务组件）-->
+    <packaging>pom</packaging>
+
+    <artifactId>xhs-framework</artifactId>
+    <name>${project.artifactId}</name>
+    <description>平台基础设施层：封装一些常用功能，供各个业务线拿来即用</description>
+
+    <modules>
+    <!-- 通用工具组件 -->
+        <module>xhs-common</module>
+    </modules>
+
+</project>
